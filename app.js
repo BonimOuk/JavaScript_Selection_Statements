@@ -45,26 +45,30 @@ switch (month) {
 
 console.log(birthMonth);
 
-// Exercise 3
-let typeId = "01";
-let colorId = "PU";
-let sizeId = "L";
+// // Exercise 3
+// let typeId = "01";
+// let colorId = "PU";
+// let sizeId = "L";
 
 let type = "";
 let color = "";
 let size = "";
 
+let typeId = prompt("Enter a typeId");
+let colorId = prompt("Enter a colorId");
+let sizeId = prompt("Enter a sizeId");
+
 switch (typeId) {
-  case typeId == "01":
+  case "01":
     type = "Tank top";
     break;
-  case typeId == "02":
+  case "02":
     type = "T-Shirt";
     break;
-  case typeId == "03":
+  case "03":
     type = "Long Sleeve";
     break;
-  case typeId == "04":
+  case "04":
     type == "Sweat Shirt";
     break;
   default:
@@ -72,16 +76,16 @@ switch (typeId) {
 }
 
 switch (colorId) {
-  case colorId == "BL":
+  case "BLA":
     color = "Black";
     break;
-  case colorId == "BL":
+  case "BLU":
     color = "Blue";
     break;
-  case colorId == "RD":
+  case "RD":
     color = "Red";
     break;
-  case colorId == "PU":
+  case "PU":
     color = "Purple";
     break;
   default:
@@ -89,16 +93,16 @@ switch (colorId) {
 }
 
 switch (sizeId) {
-  case sizeId == "S":
+  case "S":
     size = "Small";
     break;
-  case sizeId == "M":
+  case "M":
     size = "Medium";
     break;
-  case sizeId == "L":
+  case "L":
     size = "Large";
     break;
-  case sizeId == "XL":
+  case "XL":
     size = "Extra Large";
     break;
   default:
@@ -106,3 +110,5 @@ switch (sizeId) {
 }
 
 console.log(`Product: ${size} ${color} ${type}`);
+
+// Product: Large Purple Tank Top
